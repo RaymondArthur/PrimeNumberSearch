@@ -1,4 +1,4 @@
-# PrimeNumberSearch
+# Prime Number Search
 An implementation of the sieve of Eratosthenes, which is an ancient algorithm that finds prime numbers from 1 to *n*.
   
 ## Purpose
