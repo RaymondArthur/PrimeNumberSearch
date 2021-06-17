@@ -1,6 +1,9 @@
 # Prime Number Search
 An implementation of the sieve of Eratosthenes, which is an ancient algorithm that finds prime numbers from 1 to *n*.
   
+## Link to github page
+Visit https://raymondarthur.github.io/PrimeNumberSearch/ for an interactive demonstration of this app.
+
 ## Purpose
 The purpose of this little app is twofold:
   1. To let me learn about a simple mathematical algorithm that identifies prime numbers from 1 to *n*
