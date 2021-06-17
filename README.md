@@ -19,6 +19,9 @@ Essentially, the sieve of Eratosthenes has several steps:
 2. Mark the first element, which represents the integer 1, as FALSE because it is not a prime. 
 3. Mark the second element, which represents the integer 2, as TRUE because it is a prime.
 4. Mark the values of all multiple of 2 as FALSE, because these are even numbers which by definition are not prime numbers.
-5. For each remaining element, check to see if its value is FALSE. If it is FALSE, the element is not a prime number, and the algorithm moves on. If it is TRUE, the element is a prime number, and the element marks its multiples as FALSE (e.g. the value of the third element is TRUE since it represents the integer 3, but multiples of 3 such as 3,6,9 etc can immediately be set as FALSE since they can be divided by 3 and therefore are not prime numbers).
+5. For each remaining element in the array, check to see if its value is FALSE. If it is FALSE, the element is not a prime number, and the algorithm moves on to the next element in the array. If it is TRUE, the element is a prime number, and the element marks its multiples as FALSE (e.g. the value of the third element is TRUE since it represents the integer 3, but the value of multiples of 3 such as 3,6,9 etc can immediately be set to FALSE since they can be divided by 3 and therefore are not prime numbers).
 6. The whole algorithm only needs to go as far as sqrt(n), since sqrt(n) is the largest factor of *n*.
 7. Once the algorithm has finished, count the number of elements in our array with a value of TRUE - this will be the number of primes between 1 and *n*. Also, we can return the indexes of TRUE elements to return the set of prime numbers from 1 to *n*. 
+
+## React components
+React components serve up the various components of the UI. This is a simple app and I wanted the UI to be basic.
