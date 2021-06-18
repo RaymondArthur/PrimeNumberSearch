@@ -10,7 +10,7 @@ The purpose of this little app is twofold:
   2. To create a simple UI via React
 
 ## Structure
-- index.html has the base HTML code and links JS scripts and CSS style sheets
+- index.html has the base HTML code and links to JS scripts and CSS style sheets
 - react.js has the code for the React components
 - findPrimes.js has the code for the Sieve of Eratosthenes
 - styles.css has the styling css code
