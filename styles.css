@@ -1,0 +1,23 @@
+.heading {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.button {
+    text-align: center;
+    font-size: large;
+}
+
+.inputBox {
+    color:white;
+    text-align: center;
+    font-size: large;
+    background-color: cornflowerblue;
+}
+
+.results {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    font-size: large;
+}
