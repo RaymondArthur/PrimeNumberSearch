@@ -43,7 +43,7 @@ class InputBox extends React.Component{
             <div >
             <form className='form'>
                 <label>
-                    Please enter a postitive integer <em>n</em>:
+                    Please enter a positive integer <em>n</em>:
                     <br/>
                     <input className='inputBox' onChange = {this.props.onChange} type='number' min ='1'/>    
                 </label>
