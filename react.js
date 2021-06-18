@@ -1,3 +1,5 @@
+import {styles} from 'styles.css'
+
 //H1 heading component to store page title
 class Heading extends React.Component{
     constructor(props){
@@ -6,7 +8,7 @@ class Heading extends React.Component{
 
     render(){
         return(
-            <h1 className='heading'>{this.props.title}</h1>
+            <h1 className={styles.heading}>{this.props.title}</h1>
         );
     }
 }
