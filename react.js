@@ -6,7 +6,7 @@ class Heading extends React.Component{
 
     render(){
         return(
-            <h1 className={styles.heading}>{this.props.title}</h1>
+            <h1 className='heading'>{this.props.title}</h1>
         );
     }
 }
