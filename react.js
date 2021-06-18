@@ -1,4 +1,3 @@
-
 //H1 heading component to store page title
 class Heading extends React.Component{
     constructor(props){
@@ -20,7 +19,7 @@ class Button extends React.Component{
     }
     render(){
         return(
-            <div>
+            <div className='buttonDiv'>
                 <button className='button' onClick={this.props.findPrimes}>
                     {this.props.buttonText}
                 </button>
@@ -41,13 +40,15 @@ class InputBox extends React.Component{
 
     render(){
         return(
-            <form>
+            <div >
+            <form className='form'>
                 <label>
                     Please enter a postitive integer <em>n</em>:
                     <br/>
                     <input className='inputBox' onChange = {this.props.onChange} type='number' min ='1'/>    
                 </label>
             </form>
+            </div>
         );
     }
 }
