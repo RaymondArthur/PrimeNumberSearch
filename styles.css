@@ -44,8 +44,8 @@ p {
 .results {
     padding-top:1em;
     padding-bottom: 1em;
-    background-color:cornflowerblue;
-    color: white;
+    /*background-color:cornflowerblue;
+    color: white;*/
     text-align: center;
     font-size: 1em;
 }
