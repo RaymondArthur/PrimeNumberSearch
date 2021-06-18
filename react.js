@@ -6,7 +6,7 @@ class Heading extends React.Component{
 
     render(){
         return(
-            <h1>{this.props.title}</h1>
+            <h1 className='heading'>{this.props.title}</h1>
         );
     }
 }
@@ -20,7 +20,7 @@ class Button extends React.Component{
     render(){
         return(
             <div>
-                <button onClick={this.props.findPrimes}>
+                <button className='button' onClick={this.props.findPrimes}>
                     {this.props.buttonText}
                 </button>
             </div>
@@ -44,7 +44,7 @@ class InputBox extends React.Component{
                 <label>
                     Please enter a postitive integer <em>n</em>:
                     <br/>
-                    <input onChange = {this.props.onChange} type='number' min ='1'/>    
+                    <input className='inputBox' onChange = {this.props.onChange} type='number' min ='1'/>    
                 </label>
             </form>
         );
@@ -60,7 +60,7 @@ class Results extends React.Component{
     render(){
         return(
             <div>
-                <p>{this.props.message}.</p>
+                <p className='results'>{this.props.message}.</p>
             </div>
         );
     }
