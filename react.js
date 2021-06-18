@@ -1,3 +1,4 @@
+
 //H1 heading component to store page title
 class Heading extends React.Component{
     constructor(props){
