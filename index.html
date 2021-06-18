@@ -9,140 +9,15 @@
 <body>
 <div id = 'root'></div>
 <!-- React CDN links --> 
-    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script> 
-    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script> 
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script> 
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script> 
 <!-- JSX/Babel CDN links--> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script> 
-    <!-- Remember to include type = 'text/babel' for JSX react scripts--> 
-    <script type = 'text/babel' src='react.js'>
-// class Heading extends React.Component{
-//     constructor(props){
-//         super(props);
-//     }
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script> 
+<!-- Remember to include type = 'text/babel' for JSX react scripts--> 
 
-//     render(){
-//         return(
-//             <h1>{this.props.title}</h1>
-//         );
-//     }
-// }
-
-// class Button extends React.Component{
-//     constructor(props){
-//         super(props);
-//     }
-//     render(){
-//         return(
-//             <div>
-//                 <button onClick={this.props.findPrimes}>
-//                     {this.props.buttonText}
-//                 </button>
-//             </div>
-//         );
-//     }
-// }
-
-// class Result extends React.Component{
-//     constructor(props){
-//         super(props);
-//     }
-//     render(){
-//         return(
-//             <div>
-//                 <p>
-
-//                 </p>
-//             </div>
-//         );
-//     }
-// }
-
-// class InputBox extends React.Component{
-//     constructor(props){
-//         super(props);
-//     }
-
-//     onChange(event){
-//         this.props.value = event.target.value;
-//     }
-
-//     render(){
-//         return(
-//             <form>
-//                 <label>
-//                     Please enter a postitive integer <em>n</em>:
-//                     <br/>
-//                     <input onChange = {this.props.onChange} type='number' min ='1'/>    
-//                 </label>
-//             </form>
-//         );
-//     }
-// }
-
-// class Results extends React.Component{
-//     constructor(props){
-//         super(props);
-//     }
-
-//     render(){
-//         return(
-//             <div>
-//                 <p>{this.props.message}.</p>
-//             </div>
-//         );
-//     }
-// }
-
-// class Page extends React.Component{
-//     constructor(props){
-//         super(props);
-//         this.state ={
-//             n:'',
-//             result:'',
-//             message:'Please enter an integer greater than 0 and click "Find Primes"',
-//             timeTaken: '',
-//         }
-
-//         this.setN=this.setN.bind(this);
-//         this.findPrimes=this.findPrimes.bind(this);
-//     }
-
-//     findPrimes(state,props){
-//         let start = Date.now();  
-//         let findPrimeResult = findPrimes(this.state.n);
-//         let finish = (Date.now()-start);
-//         this.setState({
-//             result:findPrimeResult,
-//             message:'There are ' + findPrimeResult + ' primes between 1 and ' + this.state.n + 
-//                 '.  Time taken: ' + finish + 'ms'
-//         });
-//     }
-
-//     setN(event){
-//         this.setState({
-//             n: event.target.value
-//         })
-//     }
-
-//     render(){
-//         return(
-//             <div>
-//                 <Heading title={this.props.title}/>
-//                 <InputBox value={this.state.n} onChange={this.setN}/>
-//                 <Button onClick = {this.setN} 
-//                     findPrimes={this.findPrimes} 
-//                     buttonText={this.props.buttonText}
-//                     />
-//                 <Results message = {this.state.message}/>
-//             </div>
-//         );
-//     }
-// }
-
-// ReactDOM.render(<Page title='Sieve of Eratosthenes'
-//     buttonText = 'Find Primes'/>,
-//     document.getElementById('root'));
-    </script>
+<!-- Importing .js script with React components/code-->
+<script type = 'text/babel' src='react.js'>
+</script>
     
 <!-- findPrimes algorithm script-->
 <script src='findPrimes.js'></script>
