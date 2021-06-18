@@ -1,4 +1,4 @@
-import {styles} from '/styles.css'
+import styles from './styles.css'
 
 //H1 heading component to store page title
 class Heading extends React.Component{
