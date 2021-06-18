@@ -9,6 +9,15 @@ The purpose of this little app is twofold:
   1. To let me learn about a simple mathematical algorithm that identifies prime numbers from 1 to *n*
   2. To create a simple UI via React
 
+## Structure
+- index.html has the base HTML code and links JS scripts and CSS style sheets
+- react.js has the code for the React components
+- findPrimes.js has the code for the Sieve of Eratosthenes
+- styles.css has the styling css code
+
+## Instructions
+Enter a positive integer into the blue box and press "Find Primes". The algorithm will count the number of prime numbers between 1 and the user-supplied integer *n* and then display the result on screen (along with the time taken to do the calculation).
+
 ## Why care about finding prime numbers?
 As someone with a maths/stats/quantitative finance background, I am intrigued by calculations and algorithms. Identifying prime numbers from 1 to *n* was an interesting self-contained problem that allowed me to revisit coding with a view to making an algorithm efficient.
 
@@ -27,4 +36,4 @@ Essentially, the sieve of Eratosthenes has several steps:
 7. Once the algorithm has finished, count the number of elements in our array with a value of TRUE - this will be the number of primes between 1 and *n*. Also, we can return the indexes of TRUE elements to return the set of prime numbers from 1 to *n*. 
 
 ## React components
-React components serve up the various components of the UI. This is a simple app and I wanted the UI to be basic.
+React components serve up the various components of the UI. This is a simple app and I wanted the UI to be basic, so the React DOM components reflect this simplicity.
