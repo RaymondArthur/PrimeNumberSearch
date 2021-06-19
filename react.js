@@ -85,13 +85,22 @@ class Page extends React.Component{
 
     findPrimes(state,props){
         let start = Date.now();  
-        let findPrimeResult = findPrimes(this.state.n);
-        let finish = (Date.now()-start);
-        this.setState({
-            result:findPrimeResult,
-            message:'There are ' + findPrimeResult + ' primes between 1 and ' + this.state.n + 
-                '.  Time taken: ' + finish + 'ms'
-        });
+        let findPrimeResult;
+        findPrimes(this.state.n).then(data=> {
+            findPrimeResult = data
+            let finish = (Date.now()-start);
+            this.setState({
+                result:findPrimeResult,
+                message:'There are ' + findPrimeResult + ' primes between 1 and ' + this.state.n + 
+                    '.  Time taken: ' + finish + 'ms'
+                });
+        })
+        .catch(
+            this.setState({
+            result:'Err',
+            message:'An error occurred, please refresh the page and try again'
+            })
+        )
     }
 
     setN(event){
