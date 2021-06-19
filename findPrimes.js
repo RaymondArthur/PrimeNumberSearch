@@ -1,4 +1,4 @@
-function findPrimes(n){
+async function findPrimes(n){
     let list = [];  
     let indexedList = []; 
     let primes; 
