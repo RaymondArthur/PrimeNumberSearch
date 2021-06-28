@@ -84,23 +84,31 @@ class Page extends React.Component{
     }
 
     findPrimes(state,props){
-        let start = Date.now();  
-        let findPrimeResult;
-        findPrimes(this.state.n).then(data=> {
-            findPrimeResult = data
+        let primeWorker = new Worker('findPrimes.js');
+        if(this.state.n < 1 || this.state.n === NaN){
+            this.setState({
+                result:'N/A',
+                message:'Please enter a positive integer and try again'
+                })
+        }
+        else if(window.Worker){
+            let start = Date.now();
+            primeWorker.postMessage(this.state.n);
+            primeWorker.onmessage = (m) => {
             let finish = (Date.now()-start);
             this.setState({
-                result:findPrimeResult,
-                message:'There are ' + findPrimeResult + ' primes between 1 and ' + this.state.n + 
+                result:m.data,
+                message:'There are ' + m.data + ' primes between 1 and ' + this.state.n + 
                     '.  Time taken: ' + finish + 'ms'
                 });
-        })
-        .catch(
+            }
+        }
+        else{ 
             this.setState({
             result:'Err',
             message:'An error occurred, please refresh the page and try again'
             })
-        )
+        }
     }
 
     setN(event){
