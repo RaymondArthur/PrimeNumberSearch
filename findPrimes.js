@@ -1,4 +1,4 @@
-async function findPrimes(n){
+function findPrimes(n){
     let list = [];  
     let indexedList = []; 
     let primes; 
@@ -45,4 +45,8 @@ async function findPrimes(n){
         } 
     });
         return indexedList.filter(Boolean).length;
+}
+onmessage = (m) => {
+    let res =findPrimes(m.data);
+    postMessage(res);
 }
