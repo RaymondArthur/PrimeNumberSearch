@@ -21,7 +21,7 @@ Enter a positive integer into the blue box and press "Find Primes". The algorith
 ## Why care about finding prime numbers?
 As someone with a maths/stats/quantitative finance background, I am intrigued by calculations and algorithms. Identifying prime numbers from 1 to *n* was an interesting self-contained problem that allowed me to revisit coding with a view to making an algorithm efficient.
 
-Finding prime numbers seems like a simple process - and it is. But finding prime numbers *quickly* is not a simple process. My first attempt at this algorithm was accurate and could identify all 78498 primes from 1 to 1000000, but the algorithm took a very long time to run (more than 40 seconds) using Node.js on my i5-6500T dekstop (old-ish 4C/4T processor).
+Finding prime numbers seems like a simple process - and it is. But finding prime numbers *quickly* is not a simple process. My first attempt at this algorithm was accurate and could identify all 78498 primes from 1 to 1000000, but the algorithm took a very long time to run (more than 40 seconds) using Node.js on my i5-6400T dekstop (old-ish 4C/4T processor).
 
 Having heard that identifying primes was a common performance-benchmarking tool, I spent some time researching and came acorss an ancient algorithm called the **Sieve of Eratosthenes**, which has a novel way of efficitenly identifying prime numbers from 1 to *n*.
 
